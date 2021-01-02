@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.css"> 
+</head>
+<body>
+    <div class="reto-dropdown">
+        <h2>Dropdown</h2>
+        <button class="js_dropdown menu-dropdown">DropDown
+            <i class="fas fa-angle-down"></i>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </button>
+        <button class="js_dropdown2 menu-dropdown">DropDown
+            <i class="fas fa-angle-down"></i>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </button>
+    </div>
+    <div class="reto-accordion">
+        <h2>Acordion</h2>
+        <div class="js_accordion accordion">
+            <div class="js_accordion_item accordion_item"  area-expanded="true">
+                <h3 class="ac-title">Titulo 1</h3>
+                <div class="ac-parrafo" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur accusamus
+                        molestias asperiores
+                        quibusdam commodi distinctio dolor non. Ut voluptas dicta recusandae rem exercitationem molestias?
+                        Dolorem aspernatur cupiditate vel. Eligendi, explicabo. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Saepe iste neque numquam unde sequi, dolore dicta, doloribus ullam inventore quis necessitatibus
+                        molestiae itaque qui quidem quaerat! Ullam maiores quod quaerat.</p>
+                </div>
+            </div>
+            <div class="js_accordion_item accordion_item" area-expanded="false">
+                <h3 class="ac-title" >Titulo 2</h3>
+                <div class="ac-parrafo" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur accusamus
+                        molestias asperiores
+                        quibusdam commodi distinctio dolor non. Ut voluptas dicta recusandae rem exercitationem molestias?
+                        Dolorem aspernatur cupiditate vel. Eligendi, explicabo. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Saepe iste neque numquam unde sequi, dolore dicta, doloribus ullam inventore quis necessitatibus
+                        molestiae itaque qui quidem quaerat! Ullam maiores quod quaerat.</p>
+                </div>
+            </div>
+            <div class="js_accordion_item accordion_item" area-expanded="false">
+                <h3 class="ac-title" >Titulo 3</h3>
+                <div class="ac-parrafo" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur accusamus
+                        molestias asperiores
+                        quibusdam commodi distinctio dolor non. Ut voluptas dicta recusandae rem exercitationem molestias?
+                        Dolorem aspernatur cupiditate vel. Eligendi, explicabo. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Saepe iste neque numquam unde sequi, dolore dicta, doloribus ullam inventore quis necessitatibus
+                        molestiae itaque qui quidem quaerat! Ullam maiores quod quaerat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reto-modal">
+        <h2>Modal</h2>
+        <button class="js_buttonModal1 open-modal-button">Open Modal</button>
+        <div class="js_modal1 modal">
+            <div class="modal-template">
+                <header class="modal-header">
+                    Formulario 1
+                    <span class="js_close close"><i class="fas fa-times-circle"></i></span>
+                </header>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                    </form>
+                </div>
+                <footer class="modal-footer">
+                    <button class="js_accept">Aceptar</button>
+                    <button class="js_cancel">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        <button class="js_buttonModal2 open-modal-button">Open Modal 2</button>
+        <div class="js_modal2 modal">
+            <div class="modal-template">
+                <header class="modal-header">
+                    Formulario 2
+                    <span class="js_close close"><i class="fas fa-times-circle"></i></span>
+                </header>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Apellido">
+                    </form>
+                </div>
+                <footer class="modal-footer">
+                    <button class="js_accept">Aceptar</button>
+                    <button class="js_cancel">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
