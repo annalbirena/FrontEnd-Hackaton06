@@ -135,6 +135,12 @@ button:hover {
   cursor: pointer;
 }
 
+.accordion .accordion_item h3:hover {
+  color: #F7C232;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
 .accordion .accordion_item .ac-parrafo {
   padding: 20px;
   color: #5B5B5B;

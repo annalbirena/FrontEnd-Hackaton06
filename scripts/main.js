@@ -24,7 +24,6 @@ const dropdownButton2 = new Dropdown({
 })
 ///////////////////////////////////////////////////////////////////
 //ACCORDION
-///////////////////////////////////////////////////////////////////////
 function AccordionB(options){
     this.element = document.querySelector(options.elem);
     this.accordionItems = this.element.querySelectorAll('h3');
