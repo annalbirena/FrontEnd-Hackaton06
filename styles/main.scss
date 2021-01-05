@@ -71,6 +71,7 @@ button:hover{
     text-align: left;
 
     .accordion_item{
+
         h3{
             font-size: 20px;
             padding: 20px;
@@ -78,18 +79,18 @@ button:hover{
             color: #5a5651;
             cursor: pointer;
         }
+
         .ac-parrafo{
             padding: 20px;
             color: #5B5B5B;
             border-bottom: 1px solid #F7C232;  
             display: none;
-        }
+        } 
     }
-    .accordion_item[area-expanded='true'] {
-        div{
-            display: block;
-        }
-    }
+
+    .accordion_item[area-expanded='true'] div{
+        display: block;
+    }  
 }
 
 //MODAL

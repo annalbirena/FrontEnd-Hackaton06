@@ -50,21 +50,37 @@ const dropdownButton2 = new Dropdown({
 //     element: '.js_accordion'
 // })
 ///////////////////////////////////////////////////////////////////////
-const items = document.querySelectorAll(".js_accordion h3");
+function AccordionB(options){
+    this.element = document.querySelector(options.elem);
+    this.accordionItems = this.element.querySelectorAll('h3');
 
-function toggleAccordion() {
-  const itemToggle = this.parentNode.getAttribute('area-expanded');
-  
-  for (i = 0; i < items.length; i++) {
-    items[i].parentNode.setAttribute('area-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.parentNode.setAttribute('area-expanded', 'true');
-  }
+    this.addEvent(options);
 }
 
-items.forEach(item => item.addEventListener('click', toggleAccordion));
+AccordionB.prototype.toggle = function(element){
+const itemToggle = element.parentNode.getAttribute('area-expanded');
+
+this.accordionItems.forEach(element => {
+    element.parentNode.setAttribute('area-expanded', 'false');
+});
+
+if (itemToggle == 'false') {
+    element.parentNode.setAttribute('area-expanded', 'true');
+}
+}
+
+AccordionB.prototype.addEvent = function(options){
+this.accordionItems.forEach(element => {
+    element.onclick = () =>{
+        this.toggle(element);
+}
+});
+}
+
+//Crear objeto
+const accordion1 = new AccordionB({
+ elem: '.js_accordion',
+})
 
 /////////////////////////////////////////////////////////////////////
 //MODAL
