@@ -24,31 +24,6 @@ const dropdownButton2 = new Dropdown({
 })
 ///////////////////////////////////////////////////////////////////
 //ACCORDION
-// function AccordionB(options){
-//     this.element = document.querySelector(options.element);
-//     this.accordionItems = this.element.querySelectorAll('.js_accordion_item h3');
-
-//     this.toggleAccordion(options);
-//     this.openAccordion();
-// }
-
-// AccordionB.prototype.openAccordion = function(){
-//     const itemToggle = this.accordionItems.getAttribute('aria-expanded');
-//     console.log(itemToggle);
-// }
-
-// //Evento
-// AccordionB.prototype.toggleAccordion = function(options){
-//     const array = this.accordionItems;
-//     array.forEach(element => {
-//         console.log('Hola');
-//     });
-//         console.log(array);
-// }
-
-// const accordion = new AccordionB({
-//     element: '.js_accordion'
-// })
 ///////////////////////////////////////////////////////////////////////
 function AccordionB(options){
     this.element = document.querySelector(options.elem);
@@ -60,26 +35,26 @@ function AccordionB(options){
 AccordionB.prototype.toggle = function(element){
 const itemToggle = element.parentNode.getAttribute('area-expanded');
 
-this.accordionItems.forEach(element => {
-    element.parentNode.setAttribute('area-expanded', 'false');
-});
+    this.accordionItems.forEach(element => {
+        element.parentNode.setAttribute('area-expanded', 'false');
+    });
 
-if (itemToggle == 'false') {
-    element.parentNode.setAttribute('area-expanded', 'true');
-}
+    if (itemToggle == 'false') {
+        element.parentNode.setAttribute('area-expanded', 'true');
+    }
 }
 
 AccordionB.prototype.addEvent = function(options){
-this.accordionItems.forEach(element => {
-    element.onclick = () =>{
-        this.toggle(element);
-}
-});
+    this.accordionItems.forEach(element => {
+        element.onclick = () =>{
+            this.toggle(element);
+        }
+    });
 }
 
 //Crear objeto
 const accordion1 = new AccordionB({
- elem: '.js_accordion',
+    elem: '.js_accordion',
 })
 
 /////////////////////////////////////////////////////////////////////
